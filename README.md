@@ -65,7 +65,7 @@ To build these ensure you are in the `esp-wifi` directory as othewise the `confi
 - starts Bluetooth advertising
 - offers one service with three characteristics (one is read/write, one is write only, one is read/write/notify)
 - pressing the boot-button on a dev-board will send a notification if it is subscribed
-- this uses a toy level BLE stack - might not work with every BLE central device (tested with Android and Windows Bluetooth LE Explorer)
+- this uses a toy level BLE stack - might not work with every BLE central device (tested with Android and ~~Windows Bluetooth LE Explorer~~ --> Ugh.)  Try [iPhone app BLE Scanner 4.0](https://apps.apple.com/us/app/ble-scanner-4-0/id1221763603)
 
 |   Chip   | Command                                                                                                                                    |
 | :------: | ------------------------------------------------------------------------------------------------------------------------------------------ |
