@@ -41,8 +41,8 @@ embassy-net-driver = { git = "https://github.com/embassy-rs/embassy", rev = "264
 riscv-target = { version = "0.1.2", optional = true }
 
 [dev-dependencies]
-bleps = { git = "https://github.com/bjoernQ/bleps", package = "bleps", rev = "33fde67257bfbc6c0aebf7649fd302c82ed94c64" }
-bleps-macros = { git = "https://github.com/bjoernQ/bleps", package = "bleps-macros", rev = "33fde67257bfbc6c0aebf7649fd302c82ed94c64" }
+bleps = { git = "https://github.com/bjoernQ/bleps", package = "bleps"}
+bleps-macros = { git = "https://github.com/bjoernQ/bleps", package = "bleps-macros"}
 embassy-executor  = { package = "embassy-executor", git = "https://github.com/embassy-rs/embassy/", rev = "cd9a65b", features = ["nightly", "integrated-timers"] }
 embassy-time = { version = "0.1.0", features = ["nightly"] }
 embassy-futures = "0.1.0"
@@ -55,7 +55,7 @@ esp-backtrace = { version = "0.4.0", features = [ "esp32", "panic-handler", "exc
 # change this for ESP32C3 / ESP32C2
 [target.riscv32imc-unknown-none-elf.dev-dependencies]
 esp-println = { version = "0.3.1", features = [ "esp32c3", "log" ] }
-esp-backtrace = { version = "0.4.0", features = [ "esp32c3", "panic-handler", "exception-handler", "print-uart" ] }
+esp-backtrace = { version = "0.5.0", features = [ "esp32c3", "panic-handler", "exception-handler", "print-uart" ] }
 
 [target.xtensa-esp32s3-none-elf.dev-dependencies]
 esp-println = { version = "0.3.1", features = [ "esp32s3", "log" ] }
