@@ -31,18 +31,18 @@ If a cell contains am em dash (&mdash;) this means that the particular feature i
 To build these ensure you are in the `esp-wifi` directory as othewise the `config.toml` will not apply
 
 ### dhcp
-
-- set SSID and PASSWORD env variable
+#### Run .\private.ps1 to set this (be sure to .gitignore this script)
+- set SSID and PASSWORD via env variables
 - gets an ip address via DHCP
 - performs an HTTP get request to some "random" server
 
-|   Chip   | Command                                                                                                                   |
-| :------: | ------------------------------------------------------------------------------------------------------------------------- |
-|  ESP32   | `cargo +esp run --example dhcp --release --target xtensa-esp32-none-elf --features "esp32,embedded-svc,wifi"`             |
+|   Chip   | Command |
+| :------: | ------- |
+|  ESP32   | `cargo +esp run --example dhcp --release --target xtensa-esp32-none-elf --features "esp32,embedded-svc,wifi"` |
 | ESP32-C2 | `cargo +nightly run --example dhcp --release --target riscv32imc-unknown-none-elf --features "esp32c2,embedded-svc,wifi"` |
 | ESP32-C3 | `cargo +nightly run --example dhcp --release --target riscv32imc-unknown-none-elf --features "esp32c3,embedded-svc,wifi"` |
-| ESP32-S2 | `cargo +esp run --example dhcp --release --target xtensa-esp32s2-none-elf --features "esp32s2,embedded-svc,wifi"`         |
-| ESP32-S3 | `cargo +esp run --example dhcp --release --target xtensa-esp32s3-none-elf --features "esp32s3,embedded-svc,wifi"`         |
+| ESP32-S2 | `cargo +esp run --example dhcp --release --target xtensa-esp32s2-none-elf --features "esp32s2,embedded-svc,wifi"` |
+| ESP32-S3 | `cargo +esp run --example dhcp --release --target xtensa-esp32s3-none-elf --features "esp32s3,embedded-svc,wifi"` |
 
 ### static_ip
 
@@ -93,7 +93,8 @@ To build these ensure you are in the `esp-wifi` directory as othewise the `confi
 
 ### esp_now
 
-- broadcasts, receives and sends messages via esp-now
+- broadcasts, receives and sends messages via esp-now (See tutorial [here](
+https://dronebotworkshop.com/esp-now/ "ESP NOW – Peer to Peer ESP32 Communications").)
 
 |   Chip   | Command                                                                                                                                            |
 | :------: | -------------------------------------------------------------------------------------------------------------------------------------------------- |
